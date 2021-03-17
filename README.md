@@ -13,7 +13,7 @@ A user can enter text inside a Flask web app and get his message classified into
 1. Run ETL pipeline to load, clean, and store the data in a sqlite database
 	`python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
 2. Run ML pipeline to train the classifier and save the model in a pickle file
-	`python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+	`python model/train_classifier.py data/DisasterResponse.db model/classifier.pkl`
 3. Run the following command in the app's directory to run the web app
 	`python run.py`
 4. Visit `http://0.0.0.0:3001/` to access the web app
